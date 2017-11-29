@@ -1,0 +1,17 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+ 
+functions:
+  protectedapi1:
+    image: functions/alpine:0.6.9
+    fprocess: cat
+    secrets:
+    - sec1
+
+  protectedapi2:
+    image: functions/alpine:0.6.9
+    fprocess: cat
+    secrets:
+    - sec1
+    - sec2
