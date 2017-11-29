@@ -4,7 +4,7 @@
   ```
   $ git clone https://github.com/lucasroesler/faas/ -b feature-secured-secrets
   $ cd faas
-  $ # rename gateway image to something like <yourDockerHubID>/gateway:secrets01
+  $ # In docker-compose.yml, rename gateway image to something like <yourDockerHubID>/gateway:secrets01
   $ ./deploy_stack.sh
   ```
 2. Build my PR version of `faas-cli`:
